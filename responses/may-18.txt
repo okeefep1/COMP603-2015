@@ -1,6 +1,7 @@
 What does it mean for two sets to be disjoint?
 
-
+no overlapping elements between sets?
 
 What is the union of two sets?
 
+a super set of both sets including all elements from each set?

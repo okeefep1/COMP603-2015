@@ -9,7 +9,7 @@ brainfuck.exe helloworld.bf
 ----
 */
 
-#include <vector>
+#include <vector>bv
 #include <iostream>
 #include <fstream>
 
@@ -18,7 +18,7 @@ using namespace std;
 /**
  * Primitive Brainfuck commands
  */
-typedef enum { 
+typedef enum {
     INCREMENT, // +
     DECREMENT, // -
     SHIFT_LEFT, // <

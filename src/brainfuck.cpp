@@ -109,7 +109,7 @@ void parse(fstream & f, Container * cont) {
 	{
 		f >> ch; 
 		
-		if (c == '[')
+		if (ch == '[')
 		{ 
 			Loop * loop = new Loop;
 			cont->children.push_back(loop);

@@ -53,11 +53,14 @@ class Node {
  * CommandNode publicly extends Node to accept visitors.
  * CommandNode represents a leaf node with a primitive Brainfuck command in it.
  */
-class CommandNode : public Node {
+class CommandNode : public Node , int count
+{
     public:
         Command command;
-        CommandNode(char c) {
-            switch(c) {
+        CommandNode(char c, int count)
+		{
+            switch(c)
+			{
                 case '+': command = INCREMENT; break;
                 case '-': command = DECREMENT; break;
                 case '<': command = SHIFT_LEFT; break;
@@ -66,7 +69,8 @@ class CommandNode : public Node {
                 case '.': command = OUTPUT; break;
             }
         }
-        void accept (Visitor * v) {
+        void accept (Visitor * v)
+		{
             v->visit(this);
         }
 };
